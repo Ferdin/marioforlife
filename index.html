@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="Style/style.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" >
+    <script type="text/javascript">
+      $(document).ready(function(){
+        var width = (window.innerWidth > 0) ? window.innerWidth : screen.width;
+        $(".tooltip-1").hide();
+        $(".tooltip-2").hide();
+        $(".tooltip-3").hide();
+        $(".tooltip-4").hide();
+        $(".tooltip-5").hide();
+        //Home
+        $(".home").mouseover(function(){
+          $(".tooltip-1").show(300);
+        }).mouseleave(function(){
+          $(".tooltip-1").hide(300);
+        });
+
+        //About Me
+        $(".about-me").mouseover(function(){
+          $(".tooltip-2").show(300);
+        }).mouseleave(function(){
+          $(".tooltip-2").hide(300);
+        });
+
+        //Play Mario
+        $(".play-mario").mouseover(function(){
+          $(".tooltip-3").show(300);
+        }).mouseleave(function(){
+          $(".tooltip-3").hide(300);
+        });
+
+        //Game Store
+        $(".game-store").mouseover(function(){
+          $(".tooltip-4").show(300);
+        }).mouseleave(function(){
+          $(".tooltip-4").hide(300);
+        });
+
+        //Contact Us
+        $(".contact-us").mouseover(function(){
+          $(".tooltip-5").show(300);
+        }).mouseleave(function(){
+          $(".tooltip-5").hide(300);
+        });
+      });
+    </script>
+  </head>
+  <body data-spy="scroll" data-target=".navbar" data-offset="50">
+    <nav class="fixed-top nav-background">
+      <div class="container-1">
+        <div class="box-1">
+          <div class='question-block home' class="btn" align="center"><a class='nav-link' href="#section1" >?</a></div>
+        </div>
+        <div class="box-1">
+          <div class='question-block about-me' class="btn" align="center"><a class='nav-link' href="#section2" >?</a></div>
+        </div>
+        <div class="box-1">
+          <div class='question-block play-mario' class="btn" align="center"><a class='nav-link' href="#section3" >?</a></div>
+        </div>
+        <div class="box-1">
+          <div class='question-block game-store' class="btn" align="center"><a class='nav-link' href="#section4" >?</a></div>
+        </div>
+        <div class="box-1">
+          <div class='question-block contact-us'class="btn" align="center"><a class='nav-link' href="#section5" >?</a></div>
+        </div>
+      </div>
+      <div class="box1 sb tooltip-1">Home</div>
+      <div class="box1 sb tooltip-2">About Me</div>
+      <div class="box1 sb tooltip-3">Play Mario</div>
+      <div class="box1 sb tooltip-4">Game Store</div>
+      <div class="box1 sb tooltip-5">Contact Me</div>
+    </nav>
+
+    <div id="section1" class="sections-color" style="padding-top:180px;padding-bottom:70px">
+      <h1 align="center" style="font-size:70px;">Home</h1>
+        <div class="container">
+          <div class="row">
+            <div class="col-md-4">
+              <p style="font-size:50px;">
+                Welcome to a Fan-made website dedicated for Super Mario Games.
+              </p>
+            </div>
+            <div class="col-md-8">
+              <img src="super_mario.png" width="650px" height="800px" alt="">
+            </div>
+            </div>
+        </div>
+    </div>
+    <div id="section2" class="sections-color" style="padding-top:180px;padding-bottom:70px;background-color:#48ad16;">
+      <h1 align="center" style="font-size:70px;">About Myself</h1>
+      <img src="luigi.png" alt="" style="margin-left:86%; width:100px;height:150px;margin-top:-10%;">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8">
+            <p style="font-size:30px;">
+              Hello Everyone, My name is Ferdin Norbert and I am a Web Developer. There are several reasons for building this site.
+              First of all, I really love playing super mario games. Since my childhood, when I got my first gaming console(SNES). The first game I got was
+              Super Mario All Stars. Since then, Super Mario became my favorite game of all time following Legend of Zelda. Second of all, I wanted to brush up my
+              knowledge in Web Development. So I started out developing about the fictional character I love most. Technologies used to Develope :- HTML, Bootstrap, CSS (SASS),
+              and jQuery. If anybody wants to design/develope website for their business/projects, feel free to contact me:- ferdinnorbert2016@gmail.com
+            </p>
+          </div>
+          <div class="col-md-4">
+            <img src="Ferdin.jpg" width="373px" height="600px" style="margin-top:15px;" alt="">
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <div id="section3" class="sections-color-1" style="padding-top:180px;padding-bottom:70px;background-color:#FFDAB9;">
+      <h1 align="center" style="font-size:70px;">Play <span style="border-radius: 50%;width: 36px;height: 36px; padding: 8px;background: #E1332D;border: 2px solid #fff;color: #fff;text-align: center;">M</span>ario</h1>
+      <marquee behavior="scroll" direction="right">
+        <img src="mario_running.gif" width="100px" height="100px"alt="">
+      </marquee>
+      <div class="container">
+        <div class="row">
+          <p style="font-size:30px;">
+            Want to experience some fan-made online Super Mario games? Following are the links where you can find
+            fan-made online super mario games which is completely free.
+            <br>
+            <br>
+            <a href="https://playmariogames.com/"><button class="btn btn-info">Click here </button></a>
+             - This directs you to Play Mario Games dot com which
+            I personally prefer.
+            <br>
+            <br>
+            <strong>Fun never ends there. </strong>
+            Have you heard about Newgrounds? Perhaps 90's kids remember the awesome animations they had since their lauch in 1999. The crazy part is <strong>THEY ARE STILL ALIVE!!!</strong>
+            They got a lot of bloopers + games. Oh Good Old Memories!!!
+            <br>
+            <br>
+            <a href="https://www.newgrounds.com/"><button  class="btn btn-info">Click Here</button></a>
+             - This will redirects you to Newgrounds website. Hope y'all have fun.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div id="section4" class="sections-color-1" style="padding-top:180px;padding-bottom:70px;background-color:#FFFF99;">
+      <h1 align="center" style="font-size:70px;">Game Store</h1>
+      <p style="font-size:30px;">
+        <!--Carousel Slide-->
+        <div class="container">
+          <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+              <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img class="d-block w-100" src="luigis-mansion-3-switch-hero.jpg" alt="First slide">
+                <div class="carousel-caption d-none d-md-block">
+                  <a href="https://www.bestbuy.ca/en-ca/product/luigi-s-mansion-3-switch/12601645"><button class="btn btn-danger btn-lg">Get Now</button></a>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="new-super-mario-bros-u-deluxe-switch-hero.jpg" alt="Second slide">
+                <div class="carousel-caption d-none d-md-block">
+                  <a href="https://www.bestbuy.ca/en-ca/product/new-super-mario-bros-u-deluxe-switch/13029557"><button class="btn btn-danger btn-lg" >Get Now</button></a>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="super mario maker.jpg" alt="Third slide">
+                <div class="carousel-caption d-none d-md-block">
+                  <a href="https://www.bestbuy.ca/en-ca/product/super-mario-maker-2-switch/13456394?cmp=knc-s-71700000058062748&gclid=EAIaIQobChMI2Ijbs4686AIVk4zICh3OGgL5EAkYASABEgKYHvD_BwE&gclsrc=aw.ds"><button class="btn btn-danger btn-lg" >Get Now</button></a>
+                </div>
+              </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+        </div>
+
+      </p>
+
+    </div>
+    <div id="section5" class="sections-color" style="padding-top:180px;padding-bottom:70px;background-color:#1e90ff;">
+      <h1 align="center" style="font-size:70px;">Contact Me</h1>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <img src="mini mushroom.png" alt="">
+          </div>
+          <div class="col-md-8">
+            <p style="font-size:30px;">
+              As I have mention on "About myself" page, I am a Web Developer. The Technologies that I am well revised are following for the Web Development -
+              Java EE, Swing, Spring, Hibernate, Struts, EJB, JavaScript, PHP , HTML , CSS (Bootstrap, Materialize.css, Sass), C, C++, AngularJS, Node.js,  Express.js, jQuery , AJAX, TypeScript , SEO Principles, RESTful APIs, WordPress, REACT.js / Redux, Vue.js, AWS, ES6 .
+              Apart from that, I also have experience in iOS/Android App Development.  If anybody wants to design/develope website for their business/projects, feel free to contact me.
+              <table>
+                <tr>
+                  <td><strong>Contact me via email </strong> <i class="fa fa-envelope-square"></i></td>
+                  <td>ferdinnorbert2016@gmail.com</td>
+                </tr>
+                <tr>
+                  <td><strong>Connect with me on Linkedin</strong> </td>
+                  <td><a href="https://www.linkedin.com/in/ferdin-norbert-aa9296137/"><button type="button" class="btn btn-outline-danger">Ferdin Norbert</button></a></td>
+                </tr>
+                <tr>
+                  <td><strong>Follow me on Twitter </strong><i class="fa fa-twitter"></i></td>
+                  <td><a href="https://twitter.com/Ferdin74564401"><button type="button" class="btn btn-outline-danger">Ferdin</button></a></td>
+                </tr>
+                <tr>
+                  <td><strong>Follow me on Github </strong><i class="fa fa-github"></i></td>
+                  <td><a href="https://github.com/Ferdin"><button type="button" class="btn btn-outline-danger">Ferdin</button></a></td>
+                </tr>
+              </table>
+          </div>
+
+        </div>
+      </div>
+
+
+  </div>
+    <!--
+    <div class="animation">
+      <marquee behavior="scroll" direction="right">
+        <img src="mario_running.gif"  alt="">
+      </marquee>
+    </div>
+    -->
+    <footer class="footer">
+      <div class="footer-copyright text-center py-3">© 2020 Copyright:
+          Ferdin Norbert.
+      </div>
+    </footer>
+   </body>
+</html>
